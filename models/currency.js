@@ -16,10 +16,11 @@ Currency.init(
       validate: {
         isAlpha: true,
         len: [3,3],
+        unique: true,
       }
     },
     exchange_rate: {
-      type: DataTypes.DECIMAL,
+      type: DataTypes.DOUBLE,
       allowNull: false,
       validate: {
         isDecimal: true,

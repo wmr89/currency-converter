@@ -1,19 +1,21 @@
-<label for="currency1">Currency 1</label>
+<div class="container">
+  <label for="currency1">Exchange</label>
+  <input id="currency-amount" type="number" value="1" />
+  <select name="currency1" id="currency1">
+    {{#each currencies as |currency|}}
+    <option value="{{currency_code}}">{{currency_code}}</option>
+    {{/each}}
+  </select>
+  <label for="currency2">to</label>
+  <select name="currency2" id="currency2">
+    {{#each currencies as |currency|}}
+    <option value="{{currency_code}}">{{currency_code}}</option>
+    {{/each}}
+  </select>
+  <button id="submit-button">Exchange</button>
+</div>
+<div class="container">
+  <h2><span id="exchange-result"></span></h2>
+</div>
 
-<select name="currency1" id="currency1">
-  <option value="usd">USD</option>
-  <option value="eur">EUR</option>
-  <option value="gbp">GBP</option>
-  <option value="inr">INR</option>
-</select>
-
-<input id="number" type="number" value="42" />
-
-<label for="currency2">Currency 1</label>
-
-<select name="currency2" id="currency2">
-  <option value="usd">USD</option>
-  <option value="eur">EUR</option>
-  <option value="gbp">GBP</option>
-  <option value="inr">INR</option>
-</select>
+<script src="./js/convertCurrency.js"></script>
