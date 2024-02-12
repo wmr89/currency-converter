@@ -14,47 +14,48 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [License](#license)
 
 ## Installation
+To use the deployed app visit the link in the usage section.
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+To install and use the code locally MySQL and Node.js must be installed on your computer.
+
+Clone this repository.
+
+Use "npm i" in the command line to install dependencies
+
+Create a .env file with the variables found in config/connection.js
+
+Populate the variable with your MySQL username and password
+
+Create the database with MySQL using db/schema.sql
+
+Seed the data using "node seeds/index"
+
+Deploy the application locally with "node server"
+
 
 ## Usage
+
+Click [here to visit the deployed Currency Converter webpage](https://afternoon-ridge-08280-af9f4a5ea447.herokuapp.com/)
+
+Enter the amount of money you want to exchange
+
+Select the initial currency and the currency you would like to exchange it to
+
+Press the "Exchange" button and the converted currency amount will be displayed.
 
 Provide instructions and examples for use. Include screenshots as needed.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
-![alt text](assets/images/screenshot.png)
+![App Screenshot](/public/images/app%20acreenshot.png)
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+Express.js
+Node.js
+MySQL
+Sequelize
+Handlebars.js
 
 ## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-
-Badges aren't necessary, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+MIT LIcense
